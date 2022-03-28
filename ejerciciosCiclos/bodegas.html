@@ -1,0 +1,38 @@
+
+<script>
+
+    console.log(" ***BODEGAS*** ")
+
+    const numeroCajas = parseInt(prompt("Ingrese el número de cajas:"))
+
+    let menor = Infinity
+
+    let mayor = -1
+
+    let total = 0
+
+    i = 1
+
+    while(i <= numeroCajas){
+
+       let peso = prompt("Ingrese el peso de la caja " + i)
+
+        if(peso < menor){
+            menor = peso
+        }
+        if(peso > mayor){
+            mayor = peso
+        }
+
+        total = total + peso
+
+        i++
+    }
+
+    console.log("Menor ", menor)
+    console.log("Mayor ", mayor)
+    console.log("Promedio ", total/numeroCajas)
+
+    
+
+</script>

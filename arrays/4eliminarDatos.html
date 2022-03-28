@@ -1,0 +1,24 @@
+<script>
+
+    
+    let numeros = [1,2,3,4,5,6,7,8,9,10,22];
+    
+    console.log(numeros);
+
+    //.pop() --> elimina el ultimo dato del array
+    let numeros2 = [1,2,3,4,5,6,7,8,9,10,22];
+    numeros2.pop();//[1,2,3,4,5,6,7,8,9,10]
+    console.log(numeros2);
+
+    //.shift() --> elimina el primer dato del array
+    let numeros3 = [1,2,3,4,5,6,7,8,9,10,22];
+    numeros3.shift(); //[2,3,4,5,6,7,8,9,10,22]
+    console.log(numeros3);
+
+    //.splice() --> elegis a partir de que posicion sacamos y cuantos datos eliminamos (2 parametros)
+    let numeros4 = [1,2,3,4,5,6,7,8,9,10,22];
+    numeros4.splice(2,4); //[1,2,7,8,9,10,22]
+    console.log(numeros4);
+
+
+</script>

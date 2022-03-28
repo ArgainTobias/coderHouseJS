@@ -1,0 +1,30 @@
+<script>
+
+    const nombres = ["Tobias","Simon","Laura","Azul","Silvio"];
+    let nombre = "";
+
+    while(nombre!=="fin"){
+        nombre = prompt("Ingrese un nombre:");
+
+        let esta = nombres.includes(nombre);
+
+        if(nombre!=="fin"){
+            if(esta!==false){
+            alert(`${nombre} es parte de la familia de Tobias Argain`);
+            }
+            else{
+                alert("Ni idea amigo");
+            }
+        }
+        else{
+            alert("Nos vemos pa");
+            break;
+        }
+        
+    }
+
+        
+
+
+
+</script>

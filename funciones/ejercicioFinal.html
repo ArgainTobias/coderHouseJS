@@ -1,0 +1,84 @@
+<script>
+
+    function menu(){
+        
+        let opcion = prompt("Elija una opcion \n a)Sumar un numero n de numeros \n b)Multiplicar un numero n de operandos \n c)Secuencia")
+
+        while(opcion !== "a" && opcion !== "b" && opcion !== "c"){
+
+            opcion = prompt("Elija una opcion \n a)Sumar un numero n de numeros \n b)Multiplicar un numero n de operandos \n c)Secuencia")
+        }
+
+        if(opcion == "a"){
+
+            suma()
+
+        }
+        else if(opcion == "b"){
+
+            multiplicacion()
+
+        }
+        else if(opcion == "c"){
+
+        }
+    }
+    function suma(){
+
+        let sumar = 0
+        let s = parseInt(prompt("Ingrese la cantidad de numeros a sumar:"))
+
+        while(isNaN(s)){
+
+            s = parseInt(prompt("Ingrese la cantidad de numeros a sumar:"))
+
+        }
+
+        for( i = 1; i <= s; i++){
+
+            let numerosASumar = parseInt(prompt("Ingrese un numero a sumar"))
+
+            while(isNaN(numerosASumar)){
+
+                numerosASumar = parseInt(prompt("Ingrese un numero a sumar"))
+
+            }
+
+            sumar += numerosASumar
+        }
+
+        alert(`Su resultado es ${sumar}`)
+
+    }
+    
+    function multiplicacion(){
+
+        let multiplicar = 1
+        let m = parseInt(prompt("Ingrese la cantidad de numeros a multiplicar:"))
+
+        while(isNaN(m)){
+
+            m = parseInt(prompt("Ingrese la cantidad de numeros a multiplicar:"))
+
+        }   
+
+        for( i = 1; i <= m; i++){
+
+            let numerosAMultiplicar = parseInt(prompt("Ingrese un numero a multiplicar"))
+
+            while(isNaN(numerosAMultiplicar)){
+
+                numerosAMultiplicar = parseInt(prompt("Ingrese un numero a sumar"))
+
+            }
+
+            multiplicar *= numerosAMultiplicar
+        }
+
+        alert(`Su resultado es ${multiplicar}`)
+
+    }
+
+    menu()
+
+</script>

@@ -1,0 +1,28 @@
+<script>
+
+    let numero = "NO ES NUMERO"
+
+    while(isNaN(numero)){
+        
+        numero = parseInt(prompt("Ingrese un número entero:"))
+
+        if(!isNaN(numero)){
+
+            for(let contador = 1; contador <= numero; contador++){
+
+                document.write(contador + "<br>")   
+            }
+        }
+    }
+
+    /*let contador = 1;
+
+    while(contador <= numero){
+
+        console.log(contador);
+        contador++;
+    }*/
+</script>
+
+
+    

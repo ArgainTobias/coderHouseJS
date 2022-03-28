@@ -1,0 +1,22 @@
+<script>
+
+    let numeroIngresado = parseInt(prompt("Ingrese un número entero:"))
+    let factorial = 1
+    // let multiplicacion = 0
+
+    while(isNaN(numeroIngresado)){
+        numeroIngresado = parseInt(prompt("Ingrese un número entero:"))
+    }
+
+    for(i = numeroIngresado; i > 1; i--){
+
+        // console.log("****FACTORIAL****")
+
+        factorial *= i
+
+        // console.log(factorial)
+
+    }
+
+    console.log(`El factorial de ${numeroIngresado} es ${factorial}`)
+</script>

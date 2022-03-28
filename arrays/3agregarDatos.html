@@ -1,0 +1,56 @@
+<script>
+
+
+    let numeros = [1,2,3,4,5,6,7,8,9,10,22];
+    let opcion = "";
+
+    while(opcion !==2){
+
+        opcion = parseInt(prompt("Elija una opcion: \n 1) Agregar un numero \n 2) Fin"));
+
+        while(opcion!==1 && opcion!==2){
+            opcion = parseInt(prompt("Elija una opcion: \n 1) Agregar un numero \n 2) Fin"));
+        }
+
+        if(opcion === 1){
+
+            let num = parseInt(prompt("Ingrese el numero que desea agregar:"));
+            numeros.push(num);//con el push, el numero agregado va al final del array
+
+        }
+        else if(opcion===2){
+            alert("Gracias por usar el programa");
+            break;
+        }
+    }
+
+    for(let i=0;i<numeros.length;i++){
+        console.log(numeros[i])
+    }
+    let numeros2=[1,2,3,4,5,6,7,2,1,0]
+    let opcion2=""
+
+    while(opcion2 !== 2){
+
+        opcion2 = parseInt(prompt("Elija una opcion: \n 1) Agregar un numero \n 2) Fin"));
+
+        while(opcion2!==1 && opcion!==2){
+        opcion2 = parseInt(prompt("Elija una opcion: \n 1) Agregar un numero \n 2) Fin"));
+        }
+
+        if(opcion2 === 1){
+
+            let num2 = parseInt(prompt("Ingrese el numero que desea agregar:"));
+            numeros2.unshift(num2);//con el UNSHIFT, el numero agregado va al principio del array
+        }
+        else if(opcion2===2){
+            alert("Gracias por usar el programa");
+            break;
+        }
+    }
+
+    for(i=0;i<numeros.length;i++){
+    console.log(numeros2[i])
+    }    
+
+</script>

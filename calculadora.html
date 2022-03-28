@@ -1,0 +1,54 @@
+<script>
+
+    let numero1 = parseInt(prompt("Ingrese el primer número entero:"));
+
+    console.log(numero1)
+
+    while(isNaN(numero1) == true){
+        let numero3 = parseInt(prompt("Ingrese el primer número entero:"));
+
+        numero1 = numero3
+
+    }
+
+    let numero2 = parseInt(prompt("Ingrese el segundo número entero:"));
+
+    console.log(numero2)
+
+    while(isNaN(numero2) == true){
+        let numero4 = parseInt(prompt("Ingrese el segundo número entero:"));
+
+        numero2 = numero4
+
+    }
+
+    let operacion = prompt("Ingrese la operación que desea realizar:");
+
+    let resultado = 0
+
+    if(operacion === "suma" || operacion === "Suma" || operacion === "SUMA"){
+        resultado = numero1 + numero2;
+        
+    }
+    else if(operacion === "resta" || operacion === "Resta" || operacion === "RESTA"){
+        resultado = numero1 - numero2;
+        
+    }
+    else if(operacion === "multiplicacion" || operacion === "Multiplicacion" || operacion === "MULTIPLICACION" || operacion == "multiplicación"){
+        resultado = numero1 * numero2;
+        
+    }
+    else if(operacion === "division" || operacion === "Division" || operacion === "DIVISION" || operacion === "división"){
+        if(numero2 !== 0){
+            resultado = numero1 / numero2;
+            
+        }
+        else{
+            alert("No puedo dividir por 0")
+        }
+    }
+    else{
+        alert("La operación introducida no es válida")
+    }
+    alert(resultado);
+</script>

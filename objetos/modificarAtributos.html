@@ -1,0 +1,28 @@
+<script>
+
+    const categoria = {
+
+        nombre:"Desayuno",
+        descripcion:"Un texto cualquiera"
+    }
+
+    document.write(categoria.nombre + "<br>");
+
+    categoria.nombre = "Bebidas";
+    document.write(categoria.nombre + "<br>");
+
+
+    function cambiarNombre(obj, nuevoNombre){
+
+        obj.nombre = nuevoNombre;
+
+    }
+
+    cambiarNombre(categoria, getNombre());
+    document.write(categoria.nombre);
+
+    function getNombre(){
+        return prompt("Ingrese el nombre");
+    }
+
+</script>

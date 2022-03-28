@@ -1,0 +1,19 @@
+<script>
+
+    function pedirNombre(){
+        let nombre = prompt("Ingresa tu nombre:")
+        pedirApellido(nombre)
+    }
+
+    function pedirApellido(nombre){
+        let apellido = prompt("Ingresa tu apellido:")
+        saludar(`${nombre} ${apellido}`)
+    }
+
+    function saludar(nombreIngresado){
+        console.log("Hola",nombreIngresado)
+    }
+
+    pedirNombre()
+
+</script>

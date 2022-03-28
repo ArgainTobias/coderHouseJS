@@ -1,0 +1,21 @@
+<script>
+
+    class Producto{
+
+        constructor(nombre, precio){
+            this.nombre=nombre;
+            this.precio=precio
+        }
+        getIva(){
+            return this.precio*0.21;
+        }
+
+    }
+
+    const cerveza = new Producto("Cerveza", 200);
+    
+    console.log(cerveza);
+
+    console.log("IVA", cerveza.getIva());
+
+</script>

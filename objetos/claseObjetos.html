@@ -1,0 +1,29 @@
+<script>
+
+    const categoria = {
+
+        nombre: "CARNES",
+        descripcion: "Un texto cualquiera"
+    }
+
+    console.log(categoria)
+    console.log(categoria.descripcion)
+
+    const producto = {
+
+        nombreProducto: "leche",
+        precioProducto: 2000,
+        promocion: false,
+        empaque: "CAJA",
+        categoria:categoria
+    }
+
+    console.log(producto)
+    console.log(producto.categoria)
+    console.log(producto.categoria.nombre)
+
+    categoria.nombre = "BEBIDAS"
+
+    console.log(producto.categoria.nombre)
+
+</script>

@@ -1,0 +1,22 @@
+<script>
+
+    // cuando quiero que una funcion sea un objeto empiezo el nombre con mayusculas (es una convencion)
+
+    function Producto(nombre, precio, promocion, peso){
+
+        this.nombre=nombre;
+        this.precio=precio;
+        this.promocion=promocion;
+        this.peso=peso;
+        this.etiqueta="BAJO EN SAL";
+        this.iva = 0;
+        this.calcularIva = ()=>{this.iva = precio*0.21}
+    }
+
+    const cerveza = new Producto("cerveza", 200, false, 15);
+
+
+    alert("nombre" in cerveza)
+    //devuelve true si la propiedad de nombre "nombre" se encuentra dentro del objeto cerveza, de lo contrario, devuelve false
+
+</script>

@@ -1,0 +1,32 @@
+<script>
+
+    let usuarios = [
+        {
+        id:1,
+        nombre:"azul",
+        apellido:"perez"},
+        {
+            id:2,
+            nombre:"tobias",
+            apellido:"argain"
+        },
+        {
+            id:3,
+            nombre:"simon",
+            apellido:"argain"
+        }
+    ]
+
+    for(let i=0;i<usuarios.length;i++){
+        console.log(usuarios[i])
+        if(i===2){
+            console.log("\n")
+        }
+    }
+
+    for(usuario of usuarios){
+        console.log(usuario)
+        console.log(usuario.nombre)
+    }
+
+</script>

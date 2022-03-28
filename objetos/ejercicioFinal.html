@@ -1,0 +1,89 @@
+<script>
+
+    class Usuario{
+
+        constructor(nombre, apellido, id){
+            this.nombre=nombre;
+            this.apellido=apellido;
+            this.id=id;
+        }
+        imprimir(){
+            console.log("****USUARIO****")
+            console.log(this.nombre);
+            console.log(this.apellido);
+            console.log(this.id);
+        }
+    }
+
+    class Mascota {
+
+        constructor(nombre, responsable, tipo, edad, vacunas){
+            this.nombre=nombre;
+            this.responsable=responsable;
+            this.tipo=tipo;
+            this.edad=edad;
+            this.vacunas=vacunas;
+        }
+        imprimir(){
+            console.log("****MASCOTA****")
+            console.log(this.nombre);
+            console.log(this.responsable);
+            console.log(this.tipo);
+            console.log(this.edad);
+            console.log(this.vacunas);
+        }
+        // getNombre(){
+        //     return this.nombre=prompt("ingrese el nombre")
+        // }
+        // getResponsable(){
+        //     return this.responsable=prompt("ingrese el responsable")
+        // }
+        // getTipo(){
+        //     return this.tipo=prompt("ingrese el tipo")
+        // }
+        // getEdad(){
+        //     return this.edad=prompt("ingrese la edad")
+        // }
+        // getVacunas(){
+        //     return this.vacunas=prompt("ingrese si tiene vacunas")
+        // }
+    }
+
+    function agregarMascota(){
+        let nombreMascota=prompt("Ingrese el nombre:");
+        let tipoMascota=prompt("Ingrese si es perro o gato:");
+        let edadMascota=prompt("Ingrese la edad:");
+        let vacunasMascota=prompt("Tiene vacunas?");
+        let responsable=asignarResponsable();
+
+        return new Mascota(nombreMascota, tipoMascota, edadMascota, vacunasMascota, responsable)
+    }
+
+    function asignarResponsable(){
+        let nombreResponsable=prompt("Ingrese le nombre del responsable:");
+        let apellidoResponsable=prompt("Ingrese el apellido del responsable");
+        let idResponsable=prompt("Ingrese el id del responsable:")
+
+        return new Usuario(nombreResponsable, apellidoResponsable, idResponsable)
+    }
+
+    let opcion="";
+
+    while(opcion!==2){
+        opcion=parseInt(prompt("Seleccione una opción: \n 1)Agregar mascota \n 2)Fin."));
+
+        while(opcion!==1 && opcion!==2){
+            opcion=parseInt(prompt("Seleccione una opción: \n 1)Agregar mascota \n 2)Fin."));
+        }
+        
+        if(opcion===1){
+            let mascota=agregarMascota()
+            mascota.imprimir()
+        }
+        else{
+            alert("Gracias por venir.")
+        }
+    }
+
+
+</script>

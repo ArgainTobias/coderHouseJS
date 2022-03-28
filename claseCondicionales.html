@@ -1,0 +1,71 @@
+<script>
+
+    const clave = 1234
+
+    const claveIngresada = parseInt(prompt("Ingrese su clave:"))
+
+    if(isNaN(claveIngresada))
+    {
+        alert("AMIGO, INGRESA UN NUMERO")
+    }
+    else if(claveIngresada<1000 || claveIngresada>9999)
+    {
+        alert("SU CLAVE INGRESADA DEBE SER DE 4 CARACTERES")
+    }
+    /*else if(claveIngresada>9999)
+    {
+        alert("SU CLAVE INGRESADA DEBE SER DE 4 CARACTERES")
+    }*/
+    else if(clave===claveIngresada)
+    {
+        alert("INGRESO EXITOSO")
+    }
+    else{
+        alert("CONTRASEÑA INCORRECTA")
+    }
+    console.log("EL PROGRAMA VA A CONTINUAR")
+
+    /*
+    const clave = "1234"
+
+    const claveIngresada=prompt("Ingrese su clave:")
+
+    if(clave===claveIngresada){
+
+        alert("INGRESO EXITOSO")
+    }
+    else{
+        alert("CONTRASEÑA INCORRECTA")
+    }
+
+    const clave2 = 1234
+
+    const claveIngresada2=prompt("Ingrese su clave:")
+
+    if(clave2===claveIngresada2){
+
+        alert("INGRESO EXITOSO")
+    }
+    else{
+        alert("CONTRASEÑA INCORRECTA")
+    }
+
+    const clave3 = 1234
+
+    const claveIngresada3=parseInt(prompt("Ingrese su clave:"))
+
+    if(clave3===claveIngresada3){
+
+        alert("INGRESO EXITOSO")
+    }
+    else{
+        alert("CONTRASEÑA INCORRECTA")
+    } */
+    const a = 1;
+    const b = 2;
+    const c = a<b;
+    const d = !c;
+    console.log(c);
+    console.log(d)
+
+</script>

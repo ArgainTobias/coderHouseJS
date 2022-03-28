@@ -1,0 +1,24 @@
+<script>
+
+    // cuando quiero que una funcion sea un objeto empiezo el nombre con mayusculas (es una convencion)
+
+    function Producto(nombre, precio, promocion, peso){
+
+        this.nombre=nombre;
+        this.precio=precio;
+        this.promocion=promocion;
+        this.peso=peso;
+        this.etiqueta="BAJO EN SAL";
+    }
+
+    const cerveza = new Producto("cerveza", 200, false, 15);
+    const leche = new Producto("leche", 100, false, 200);
+    const mani = new Producto("mani", 75, false, 150);
+    const patitas = new Producto("patitas", 400, false, 500);
+    
+    console.log(cerveza);
+    console.log(leche);
+    console.log(mani);
+    console.log(patitas);
+
+</script>
