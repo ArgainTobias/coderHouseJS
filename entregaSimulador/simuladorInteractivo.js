@@ -37,7 +37,6 @@ function precioCuotas(){
     else if(articulo === 3){
 
         precio = art3
-
     }
 
     // if(cantidadCuotas === 1){

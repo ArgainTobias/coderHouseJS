@@ -1,0 +1,29 @@
+<form id="myform">
+    <input type="text" id="nombre" name="nombre" placeholder="Nombre:">
+    <input type="text" id="apellido" name="apellido" placeholder="Apellido:">
+    <input type="submit" value="Enviar" id="enviar">
+</form>
+
+<script>
+
+    //Submit
+
+    const nodoFormulario = document.querySelector("#myform");
+    nodoFormulario.addEventListener("submit",(event)=>{
+
+        const nombre = document.querySelector("#nombre");
+        const apellido = document.querySelector("#apellido");
+
+        if(nombre.value.trim()!=="" && apellido.value.trim()!==""){ //trim lo que hace es borrar espacios al principio y al final de la cadena de texto
+
+            document.querySelector("#enviar").value="Enviando...";
+            alert("Enviado ok");
+        }
+        else{
+            event.preventDefault();
+            alert("Por favor, complete el formulario");
+        }
+
+    })
+
+</script>

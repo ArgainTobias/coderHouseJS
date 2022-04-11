@@ -1,0 +1,13 @@
+<script>
+
+    function calculadora(fn, acumulador){
+
+        return fn(acumulador, parseInt(prompt("Nuevo numero:")));
+    }
+
+    // no hace falta el return, porque con las funciones flecha, si no pongo {}, la funcion automaticamente retorna
+    let miCalculo = calculadora((a,b)=> a+b, 10);
+
+    console.log(miCalculo);
+
+</script>

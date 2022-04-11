@@ -1,0 +1,39 @@
+<head>
+    <script src="simpleData.js"></script>
+</head>
+
+<script>
+
+    let productosConCategoria = [];
+
+    for(let i=0; i<productos.length; i++){
+
+        let productoConCategoria = {
+
+            id:productos[i].id,
+            nombre:productos[i].nombre,
+            precio:productos[i].precio,
+            categoria:"desayuno"
+        }
+        productosConCategoria.push(productoConCategoria);
+    }
+
+    console.log("Transformado en For:", productosConCategoria);
+
+    //map
+
+    const transformado = productos.map((element)=>{
+
+        return {
+
+            id:element.id,
+            nombre:element.nombre,
+            precio:element.precio,
+            categoria:prompt(`Ingrese la categoria de ${element.nombre}`)
+        }
+    });
+
+    console.log("Transformado en map:", transformado)
+
+
+</script>

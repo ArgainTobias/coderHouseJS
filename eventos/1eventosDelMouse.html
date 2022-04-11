@@ -1,0 +1,40 @@
+<button id="btn">Botón de prueba</button>
+<script>
+
+    const nodoBtn = document.getElementById("btn");
+
+    //mouseDown
+    nodoBtn.addEventListener("mousedown",()=>{
+        
+        console.log("MouseDown");
+        document.body.style="background-color:red";
+    })
+
+    //mouseup
+    nodoBtn.addEventListener("mouseup",()=>{
+        
+        console.log("MouseUp");
+        document.body.style="background-color:white";
+    })
+
+    //mouseOver
+    nodoBtn.addEventListener("mouseover",()=>{
+        
+        console.log("MouseOver");
+        nodoBtn.innerHTML="Ya soy otro texto"
+    })
+
+    //mouseOut
+    nodoBtn.addEventListener("mouseout",()=>{
+        
+        console.log("MouseOut");
+        nodoBtn.innerHTML="Botón de prueba";
+    })
+
+    //mouseMove
+    nodoBtn.addEventListener("mousemove",()=>{
+        
+        console.log("MouseMove");
+    })
+
+</script>

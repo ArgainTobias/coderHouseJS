@@ -1,0 +1,28 @@
+<head>
+    <script src="simpleData.js"></script>
+</head>
+
+<script>
+
+    let nombreIngresado = prompt("Ingrese el nombre de los productos que quiere buscar:");
+    let resultados = [];
+
+    for(let i=0; i<productos.length; i++){
+
+        if(productos[i].nombre.indexOf(nombreIngresado)!==-1){
+            resultados.push(productos[i]);
+        }
+    }
+    
+    console.log('encontrados en for:', resultados);
+
+    //filter
+
+    const encontrados = productos.filter((producto)=>{
+        return producto.nombre.indexOf(nombreIngresado)!==-1;
+    });
+
+    console.log(`Encontrados en filter ${encontrados}`);
+
+
+</script>

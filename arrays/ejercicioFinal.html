@@ -26,6 +26,40 @@
         return console.log(productos);
     }
 
+    function eliminarProductoId(idEliminar){
+        idEliminar = parseInt(prompt("Ingrese el id del producto que desea eliminar:"));
+            
+            for(let p of productos){
+                if(p.id === parseInt(idEliminar)){
+                    let elemento = productos.indexOf(p);
+
+                    productos.splice(elemento,1);
+
+                }
+            }
+    }
+
+    function cambiarProductoId(){
+        idCambiar = parseInt(prompt("Ingrese el id del producto que desea cambiar:"));
+
+        for(let p of productos){
+            if(p.id === parseInt(idCambiar)){
+                let elemento = productos.indexOf(p);
+
+                productos.map(function (productos2){
+                    if(productos.id === parseInt(idCambiar)){
+                        id = prompt("Introduzca el nuevo id:");
+                        nombre = prompt("Introdcuzca el nuevo nombre:");
+                        precio = prompt("Introduzca el nuevo precio:");
+                    }
+                    return productos2;
+                })
+
+            }
+        }
+
+    }
+
 
     while(opcion!=="fin"){
         
@@ -45,20 +79,21 @@
             // console.log(productos)
         }
         else if(opcion==="c"){
-            let idEliminar = parseInt(prompt("Ingrese el id del producto que desea eliminar:"))
-            
-            for(p in productos){
-                idCreados.push(productos[p].id);
-                let estaId = idCreados.includes(idEliminar);
-                if(estaId === true){
-                    productos.splice(p,1)
-                }
+            eliminarProductoId()
+            // mio MAL
 
-            }
+            // for(p in productos){
+            //     idCreados.push(productos[p].id);
+            //     let estaId = idCreados.includes(idEliminar);
+            //     if(estaId === true){
+            //         productos.splice(p,1)
+            //     }
+
+            // }
             
         }
         else if(opcion==="d"){
-
+            cambiarProductoId()
         }
         else if(opcion==="e"){
             alert("Hasta la proxima");

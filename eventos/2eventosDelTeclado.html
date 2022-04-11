@@ -1,0 +1,43 @@
+<input type="text" id="nombre" name="nombre" placeholder="Nombre:">
+<input type="text" id="apellido" name="apellido" placeholder="Apellido:">
+<button id="btn">Saludarme</button>
+
+<script>
+
+    const nombre = document.querySelector("#nombre");
+    const apellido = document.querySelector("#apellido");
+    const saludarme = document.querySelector("#btn");
+
+    //Keydown
+    nombre.addEventListener("keydown",()=>{
+
+        console.log("TECLA OPRIMIDA");
+    })
+
+    //Keyup
+    nombre.addEventListener("keyup",()=>{
+
+        console.log("TECLA SOLTADA");
+    })
+
+    //Change
+    apellido.addEventListener("change",()=>{
+
+        console.log("CAMBIÓ EL VALOR");
+    })
+
+    //Input
+    apellido.addEventListener("input",()=>{
+
+        console.log("CAMBIÓ EL VALOR input");
+        //alert(apellido.value);
+    })
+
+    saludarme.addEventListener("click",()=>{
+
+        alert(`Hola ${nombre.value} ${apellido.value}, como estás?`)
+    })
+
+
+
+</script>

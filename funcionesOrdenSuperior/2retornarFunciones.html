@@ -1,0 +1,27 @@
+<script>
+
+    function calculadora(operacion){
+
+        if(operacion === "suma"){
+
+            return (a,b)=> a+b;
+        }
+        else if(operacion === "resta"){
+
+            return (a,b)=> a-b;
+        }
+        else if(operacion === "mul"){
+
+            return(a,b)=> a*b;
+        }
+        else{
+            return(a,b)=> a/b;
+        }
+    }
+
+    let miOperacion = calculadora("suma");
+    let miResultado = miOperacion(10,20);
+
+    console.log(miResultado);
+
+</script>

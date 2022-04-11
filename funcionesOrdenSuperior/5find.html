@@ -1,0 +1,24 @@
+<head>
+    <script src="simpleData.js"></script>
+</head>
+
+<script>
+
+    let nombreIngresado = prompt("Ingrese el producto que quiere buscar:");
+
+    for(let i=0; i<productos.length; i++){
+        
+        if(productos[i].nombre === nombreIngresado){
+            console.log(`Encontrado en for ${productos[i]}`);
+            break;
+        }
+    }
+
+    //find
+
+    let productoEncontrado = productos.find((producto)=>producto.nombre===nombreIngresado);
+
+    console.log(`Encontrado en Find`, productoEncontrado);
+
+
+</script>

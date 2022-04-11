@@ -1,0 +1,21 @@
+<button id="btn" onmouseover="console.log('over');">Botón de prueba</button>
+<script>
+
+    let nombre = "";
+    const nodoBtn = document.querySelector("#btn");
+    //add event listener
+    
+    nodoBtn.addEventListener("click", ()=>{
+
+        nombre = prompt("escribi tu nombre pa:");
+        return alert(`Hola ${nombre}`);
+    });
+
+    //on --
+    nodoBtn.onclick = ()=>{
+        
+        console.log("Hola, esto es una acción del botón");
+    }
+
+
+</script>
